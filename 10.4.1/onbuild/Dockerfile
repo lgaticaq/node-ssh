@@ -16,3 +16,6 @@ ONBUILD RUN if [ -e yarn.lock ]; \
   else npm i && npm cache clean --force; fi && \
   apk del .build-deps && \
   rm -rf ~/.node-gyp /tmp/*
+ONBUILD COPY . /usr/src/app
+
+CMD [ "node", "index.js" ]
