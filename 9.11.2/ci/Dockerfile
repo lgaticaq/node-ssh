@@ -1,4 +1,4 @@
-FROM lgatica/node-ssh:9.11.2@sha256:a5e8a6bf0d346f17a5fb3356b5c552c161f10284716816c1f2c23bb4d7b95ce7
+FROM lgatica/node-ssh:10.4.1@sha256:bced64056ceb9a02b8d8b2b0228c899be8f3370fed507034e533ef8b7e2a7ca2
 
 COPY docker-entrypoint.sh /entrypoint.sh
 
